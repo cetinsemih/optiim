@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.674248">
+<testcase classname="Example" name="Optiim - Selenium Task" time="18.674248">
+<system-out><![CDATA[Given Open "automationexercise.com/" page...................................passed
+When Check, is URL True "automationexercise.com/"...........................passed
+When Check "//div[@id='slider-carousel']" Object by "xPath".................passed
+When Click "//a[text()=' Signup / Login']" Object by "xPath"................passed
+When Check "//h2[contains(text(), 'Login to your account')]" Object by "xPath".passed
+Given Send "optiim@test.com" text to "//div[@class='login-form']//input[@name='email']" Object by "xPath".passed
+Given Send "Test1234" text to "//div[@class='login-form']//input[@name='password']" Object by "xPath".passed
+When Click "//div[@class='login-form']//button" Object by "xPath"...........passed
+When Check "//h2[contains(text(), 'Features Items')]" Object by "xPath".....passed
+When Click "//a[text()=' Products']" Object by "xPath"......................passed
+When Check "//h2[contains(text(), 'All Products')]" Object by "xPath".......passed
+Given Send "tshirt" text to "//input[@id='search_product']" Object by "xPath".passed
+When Click "//button[@id='submit_search']" Object by "xPath"................passed
+When Check "//div[@class='productinfo text-center']/p" elemets by "xPath" for "shirt" text.passed
+Given Scroll bottom of the page.............................................passed
+When Click "//a[text()='View Product']" Object with "5" index by "xPath"....passed
+When Check, is URL True "https://automationexercise.com/product_details"....passed
+Given Clean and Send "2" text to "//input[@id='quantity']" Object by "xPath".passed
+When Check "//input[@id='quantity']" elemet by "xPath" for "2" value........passed
+When Click "//button[@class='btn btn-default cart']" Object by "xPath"......passed
+When Check "//h4[contains(text(), 'Added!')]" Object by "xPath".............passed
+When Check "//p[contains(text(), 'Your product has been added to cart.')]" Object by "xPath".passed
+When Click "//button[contains(text(), 'Continue Shopping')]" Object by "xPath".passed
+When Click "//a[contains(text(), 'Cart')]" Object by "xPath"................passed
+When Check does not see "//h4[contains(text(), 'Added!')]" Object by "xPath".passed
+When Check does not see "//p[contains(text(), 'Your product has been added to cart.')]" Object by "xPath".passed
+When Check "//a[contains(text(), 'Proceed To Checkout')]" Object by "xPath".passed
+When Check "//tbody/tr" Object by "xPath"...................................passed
+When Check "//td[@class='cart_quantity']/button" elemet by "xPath" for "2" text.passed
+When Click "//td[@class='cart_delete']/a" Object by "xPath".................passed
+When Wait for "1" seconds...................................................passed
+When Check does not see "//tbody/tr" Object by "xPath"......................passed
+When Check does not see "//td[@class='cart_quantity']/button" Object by "xPath".passed
+When Check "//b[contains(text(), 'Cart is empty!')]" Object by "xPath"......passed
+When Click "//div[@class='logo pull-left']" Object by "xPath"...............passed
+When Check does not see "//b[contains(text(), 'Cart is empty!')]" Object by "xPath".passed
+When Check "//div[@id='slider-carousel']" Object by "xPath".................passed
+Given Finish the scenario...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
